@@ -1,4 +1,5 @@
 import { useState } from "react";
+import './App.css'
 import {
  evaluate
 } from 'mathjs'
@@ -51,7 +52,10 @@ function App() {
 
   return (
     <div className="calculator">
-      <input type="text" value={result} />
+    <div className="buttonsWrapper">
+      <input className="Input" type="text" value={result} />
+      </div>
+      <div>
       <button value="C" onClick={handleClick}>
         C
       </button>
@@ -64,6 +68,8 @@ function App() {
       <button value="/" onClick={handleClick}>
         ÷
       </button>
+      </div>
+      <div className="buttonsWrapper">
       <button value="7" onClick={handleClick}>
         7
       </button>
@@ -76,6 +82,8 @@ function App() {
       <button value="*" onClick={handleClick}>
         ×
       </button>
+      </div>
+      <div className="buttonsWrapper">
       <button value="4" onClick={handleClick}>
         4
       </button>
@@ -88,6 +96,8 @@ function App() {
       <button value="-" onClick={handleClick}>
         -
       </button>
+      </div>
+      <div className="buttonsWrapper">
       <button value="1" onClick={handleClick}>
         1
       </button>
@@ -100,6 +110,8 @@ function App() {
       <button value="+" onClick={handleClick}>
         +
       </button>
+      </div>
+      <div>
       <button value="0" onClick={handleClick}>
         0
       </button>
@@ -109,6 +121,7 @@ function App() {
       <button value="=" onClick={handleClick}>
         =
       </button>
+      </div>
     </div>
   );
 }
