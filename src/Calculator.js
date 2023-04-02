@@ -52,6 +52,7 @@ function App() {
 
   return (
     <div className="calculator">
+    <h1>React Calculator</h1>
     <div className="buttonsWrapper">
       <input className="Input" type="text" value={result} />
       </div>
